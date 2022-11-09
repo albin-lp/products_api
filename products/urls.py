@@ -20,7 +20,9 @@ from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken.views import ObtainAuthToken
 router=DefaultRouter()
 router.register("user/signup",views.UsersignupView,basename="sign"),
+router.register("catagories",views.CategoryView,basename="cat"),
 router.register("products",views.ProductView,basename="prdct"),
+
 
 
 urlpatterns = [
